@@ -5,21 +5,21 @@
 class Acd < Formula
   desc "Atomic commit daemon for git worktrees, multi-harness"
   homepage "https://github.com/KristjanPikhof/Auto-Commit-Daemon"
-  version "2026-05-28"
+  version "2026-05-29"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KristjanPikhof/Auto-Commit-Daemon/releases/download/v2026-05-28/acd_2026-05-28_darwin_amd64.tar.gz"
-      sha256 "123fb69a2ce81c3d14bac11c57604c17f90c794d0b37db8a6c8a5c5aa34efacb"
+      url "https://github.com/KristjanPikhof/Auto-Commit-Daemon/releases/download/v2026-05-29/acd_2026-05-29_darwin_amd64.tar.gz"
+      sha256 "b4e6139181a168c761d0e50b15800c046cb73bcaff52959911b66209d069251f"
 
       define_method(:install) do
         bin.install "acd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KristjanPikhof/Auto-Commit-Daemon/releases/download/v2026-05-28/acd_2026-05-28_darwin_arm64.tar.gz"
-      sha256 "af17d03a469a22c1a8d7fa682746517a05c405d6b9971bfe0dcede624c9d2930"
+      url "https://github.com/KristjanPikhof/Auto-Commit-Daemon/releases/download/v2026-05-29/acd_2026-05-29_darwin_arm64.tar.gz"
+      sha256 "ca4710af120a826d9220bd556b9bb6ab60c2130e30ed3bb8a177df0dcfff0ea6"
 
       define_method(:install) do
         bin.install "acd"
@@ -29,15 +29,15 @@ class Acd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KristjanPikhof/Auto-Commit-Daemon/releases/download/v2026-05-28/acd_2026-05-28_linux_amd64.tar.gz"
-      sha256 "12fc3cd45e6c4cf772b2b71fbe7891dcb1ca8c29b8ebe28c8d91b015acc603d9"
+      url "https://github.com/KristjanPikhof/Auto-Commit-Daemon/releases/download/v2026-05-29/acd_2026-05-29_linux_amd64.tar.gz"
+      sha256 "84f989600b5cd5e5f839c4a84638afd6bdcb2ad061bbc4966febdf2448549b6f"
       define_method(:install) do
         bin.install "acd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KristjanPikhof/Auto-Commit-Daemon/releases/download/v2026-05-28/acd_2026-05-28_linux_arm64.tar.gz"
-      sha256 "c9fd3c103b07a4fee9e1195a79533bb9b9329b65e537d8598bd47f6b32b452bb"
+      url "https://github.com/KristjanPikhof/Auto-Commit-Daemon/releases/download/v2026-05-29/acd_2026-05-29_linux_arm64.tar.gz"
+      sha256 "c3ee41562b32b57fec0ff95f40733248d955a6f534586f32b6549bf7d9812b47"
       define_method(:install) do
         bin.install "acd"
       end
