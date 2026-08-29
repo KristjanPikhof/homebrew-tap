@@ -5,7 +5,6 @@
 class Acd < Formula
   desc "Atomic commit daemon for git worktrees, multi-harness"
   homepage "https://github.com/KristjanPikhof/Auto-Commit-Daemon"
-  version "2026-08-30"
   license "MIT"
 
   on_macos do
